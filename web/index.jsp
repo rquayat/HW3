@@ -5,17 +5,18 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Ryan's Database</title>
-		<link rel="stylesheet" type="text/css" href="indexcss.css">
+		<link rel="stylesheet" type="text/css" href="css/indexcss.css">
 	</head>
 	<body>
+            
 		<h1> Salary Calculator</h1>
-                       
-                <hr>
-               
-
+                        <hr>
+            <div>       
 		<form name="Salary Calculator" action="resultsjsp.jsp" method="post">
-                    <table>
-                        <tbody>
+                    
+                        <table>
+                        
+                        <tbody class="T">
                             <tr>
                                 <td>Hours Worked:</td>
                                 <td><input type="text" name="hours" value="" size="50"></td>
@@ -34,6 +35,7 @@
                     <input type="reset" value="Clear" id="clear">
                     <input type="submit" value="Submit" id="submit">
                     
-                </form>   
+                </form>  
+           </div>
         </body>                            
 </html>
