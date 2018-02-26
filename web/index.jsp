@@ -1,5 +1,4 @@
-<%@ page import=java.util.Date" %>
-<%@ page contentType="text/html" pageEncoding="UTF-8" %>
+<%@ page import="java.util.Date" %>
 <%@ page language="java" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
@@ -8,26 +7,33 @@
 		<title>Ryan's Database</title>
 		<link rel="stylesheet" type="text/css" href="indexcss.css">
 	</head>
-	<%
-	@Override
-	
-	
-	%>
 	<body>
-		<h1> Ryan's Database<h1>
-		
-		<form name="addForm" action="addFriend" method="get">
-			<label> Friend's Name: </label>
-			<input type="text" name="name" value="" />
-			<br>
-			<label> Email Address: </label>
-			<input type="text" name="name" value="" />
-			<br>
-			<label> Age: </label>
-			<input type="text" name="name" value="" />
-			<br>
-			<label> Favorite Color: </label>
-			<input type="text" name="name" value="" />
-			<br>
-	</body>
+		<h1> Salary Calculator</h1>
+                       
+                <hr>
+               
+
+		<form name="Salary Calculator" action="resultsjsp.jsp" method="post">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Hours Worked:</td>
+                                <td><input type="text" name="hours" value="" size="50"></td>
+                            <tr>
+                                <td>Hourly Salary:</td>
+                                <td><input type="text" name="wage" value="" size="50"></td>
+                            <tr>
+                                <td>Pre-Tax Deduct:</td>
+                                <td><input type="text" name="pretaxdeduct" value="" size="50"></td>
+                            <tr>
+                                <td>Post-Tax Deduct:</td>
+                                <td><input type="text" name="posttaxdeduct" value="" size="50"></td>
+                        </tbody>
+                    </table>
+                    
+                    <input type="reset" value="Clear" id="clear">
+                    <input type="submit" value="Submit" id="submit">
+                    
+                </form>   
+        </body>                            
 </html>
