@@ -14,21 +14,21 @@
             <div>       
 		<form name="Salary Calculator" action="resultsjsp.jsp" method="post">
                     
-                        <table>
+                    <table>
                         
                         <tbody class="T">
                             <tr>
                                 <td>Hours Worked:</td>
-                                <td><input type="text" name="hours" value="" size="50"></td>
+                                <td><input type="text" name="hours" value="" size="auto"></td>
                             <tr>
                                 <td>Hourly Salary:</td>
-                                <td><input type="text" name="wage" value="" size="50"></td>
+                                <td><input type="text" name="wage" value="" size="auto"></td>
                             <tr>
                                 <td>Pre-Tax Deduct:</td>
-                                <td><input type="text" name="pretaxdeduct" value="" size="50"></td>
+                                <td><input type="text" name="pretaxdeduct" value="" size="auto"></td>
                             <tr>
                                 <td>Post-Tax Deduct:</td>
-                                <td><input type="text" name="posttaxdeduct" value="" size="50"></td>
+                                <td><input type="text" name="posttaxdeduct" value="" size="auto"></td>
                         </tbody>
                     </table>
                     

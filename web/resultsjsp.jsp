@@ -18,7 +18,7 @@
             double PostTD = Double.parseDouble(PostTaxDeduct);
             
        // variables are now:
-       // hrws  hrwg    PreTD   PostTD
+       // hrsws  hrwg    PreTD   PostTD
       
     %>
     
@@ -44,7 +44,7 @@
                                         if(hrswrk>40) {ot=hrswrk-40;
                                                        out.println(ot); }
                                    
-                                        else out.println(ot); %>                      </td>
+                                        else out.println(ot); %>           </td>
                             <tr>
                                 <td>Overtime Hourly Rate:</td>
                                 <td> <% double otr=hrwg;
@@ -54,7 +54,7 @@
                                                         %></td>
                             <tr>
                                 <td>Gross Pay:</td>
-                                <td> <% double grpy=(hrswrk*hrwg)+(ot*otr);
+                                <td> <% double grpy=((hrswrk-ot)*hrwg)+(ot*otr);
                                         out.println(grpy);
                                     
                                                         %></td>
